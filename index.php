@@ -63,10 +63,10 @@
     <section class="perso">
         <h3>
             INFOS PERSONNELLES <br>
-            NOM : THIAM <br>
-            PRENOM : SOUKEYE<br>
-            CLASSE : BIG 2 <br>
-            CODE : 22 13 82
+            Soukeye Thiam 221382 Big 2B <br>
+            Sokhna Maimouna Fall 221365 Big 2A<br>
+            Ndeye Rama Sene Big 2B <br>
+        
         </h3>
     </section>
     <h2> Vueillez cliquez sur le bouton d'en haut à droite pour voir les exercices répartis en groupe.</h2>
