@@ -65,7 +65,7 @@
             INFOS PERSONNELLES <br>
             Soukeye Thiam 221382 Big 2B <br>
             Sokhna Maimouna Fall 221365 Big 2A<br>
-            Ndeye Rama Sene Big 2B <br>
+            Ndeye Rama Sene 221344 Big 2B <br>
         
         </h3>
     </section>
