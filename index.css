@@ -1,0 +1,248 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px brown;
+}
+.search-bar {
+    flex-grow: 1;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.menu-toggle {
+    position: relative;
+}
+
+.menu-toggle input {
+    display: none;
+}
+
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-btn span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: brown;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-btn span:nth-child(2) {
+    margin: 4px 0;
+}
+
+.menu-toggle input:checked ~ .menu-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle input:checked ~ .menu-btn span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle input:checked ~ .menu-btn span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 100px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px black;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu ul li a:hover {
+    background-color: brown;
+}
+
+.menu-toggle input:checked ~ .menu {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.welcome-section {
+    margin-top: 100px; /* Ajustez la valeur selon la hauteur désirée */
+    text-align: left;
+    margin-left: 150px;
+    
+}
+.welcome-section h1 {
+    font-family: Arial, sans-serif;
+    color: rgb(61, 0, 173); /* Couleur de base */
+    animation: heartbeat 1.5s ease-in-out infinite;
+    text-align: center;
+    
+}
+
+/* Animation de battement de cœur avec changement de couleur */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+        color: blueviolet; /* Couleur de base */
+    }
+    25% {
+        transform: scale(1.1);
+        color: blueviolet; /* Variation de couleur */
+    }
+    50% {
+        transform: scale(1.2);
+        color: black; /* Couleur plus intense */
+    }
+    75% {
+        transform: scale(1.1);
+        color: blueviolet;
+    }
+}
+.welcome-image{
+    width: 70%;
+    height: 70%;
+    margin-left: 200px;
+    margin-top: -300px;
+    size: 100px 100px;
+    padding: 100px;
+    filter: drop-shadow(1px 1px 20px brown);
+}
+footer {
+    background-color: #f8f8f8; /* Couleur de fond */
+    text-align: center; /* Centre le texte */
+    padding: 10px 0; /* Ajoute un peu d'espace en haut et en bas */
+    border-top: 3px solid rgb(197, 170, 170); /* Ligne supérieure pour séparer du contenu */
+    position: relative; /* Permet une mise en forme supplémentaire si nécessaire */
+    margin-top: 10px;
+}
+button {
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 15px 25px; /* Espace intérieur pour le texte */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Change le curseur au survol */
+    margin: 15px; /* Marge autour des boutons */
+    transition: background-color 0.3s ease; /* Effet de transition pour le changement de couleur */
+}
+
+
+        /* ... autres styles existants ... */
+
+        /* Styles pour les boutons */
+        .button-container {
+            display: flex; /* Aligne les formulaires horizontalement */
+            flex-direction: column; /* Aligne les boutons verticalement */
+            align-items: center; /* Centre les boutons horizontalement */
+            margin-top: 30px; /* Espace au-dessus des boutons */
+        }
+
+        button {
+            background-color: brown; /* Couleur de fond du bouton */
+            color: white; /* Couleur du texte */
+            border: none; /* Supprime la bordure par défaut */
+            border-radius: 5px; /* Coins arrondis */
+             /* Espace intérieur pour le texte */
+            font-size: 14px; /* Taille de la police */
+            cursor: pointer; /* Change le curseur au survol */
+             /* Marge verticale entre les boutons */
+            transition: background-color 0.3s ease; /* Effet de transition pour le changement de couleur */
+        }
+
+        button:hover {
+            background-color: brown; /* Couleur de fond au survol */
+        }
+        .dots {
+            width: 10em;
+            height: 10em;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            align-items: center;
+            margin-top: -250px;
+            margin-left: 300px;
+          }
+          
+          .dots > div {
+            width: 0.5em;
+            height: 0.5em;
+            background-color: brown;
+            border-radius: 50%;
+            animation: fade 1.5s alternate ease-in-out infinite;
+          }
+          
+          .dots > div:nth-of-type(2),
+          .dots > div:nth-of-type(4) {
+            animation-delay: 0.25s;
+          }
+          
+          .dots > div:nth-of-type(3),
+          .dots > div:nth-of-type(5),
+          .dots > div:nth-of-type(7) {
+            animation-delay: 0.5s;
+          }
+          
+          .dots > div:nth-of-type(6),
+          .dots > div:nth-of-type(8) {
+            animation-delay: 0.75s;
+          }
+          
+          .dots > div:nth-of-type(9) {
+            animation-delay: 1s;
+          }
+          
+          @keyframes fade {
+            to {
+              opacity: 0.2;
+            }
+          }
+          .image-haut-droite {
+            position: absolute;
+            top: 10px; 
+            right: 10px;
+            z-index: 1; 
+            width: 20%;
+            height: 25%;
+            padding-top: 3%;
+        }
+       
+
+          
